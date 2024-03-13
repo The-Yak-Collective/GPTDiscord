@@ -50,14 +50,14 @@ class Override:
 
 class Models:
     # Text models
-    DAVINCI = "text-davinci-003"
-    CURIE = "text-curie-001"
+    DAVINCI = "gpt-3.5-turbo-instruct"
+    CURIE = "gpt-3.5-turbo-instruct"
 
     # Embedding models
     EMBEDDINGS = "text-embedding-ada-002"
 
     # Edit models
-    EDIT = "text-davinci-edit-001"
+    EDIT = "gpt-4"
 
     # ChatGPT Models
     TURBO = "gpt-3.5-turbo"
