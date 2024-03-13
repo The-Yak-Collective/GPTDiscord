@@ -14,4 +14,10 @@ usage.txt
 /pickles
 .idea
 
+# YC additions
+# Local Python venv
+/bin
+/include
+/lib
+pyvenv.cfg
 
