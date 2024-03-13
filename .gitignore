@@ -20,4 +20,5 @@ usage.txt
 /include
 /lib
 pyvenv.cfg
-
+# /share probably shouldn't be checked in either...
+/share
