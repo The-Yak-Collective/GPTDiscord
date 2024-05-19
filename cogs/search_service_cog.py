@@ -177,7 +177,7 @@ class CustomTextRequestWrapper(BaseModel):
             original_query = original_query.strip()
         except:
             url = url
-            model = "gpt-3.5-turbo"
+            model = "gpt-4-turbo"
             original_query = "No Original Query Provided"
 
         """GET the URL and return the text."""
@@ -750,5 +750,5 @@ class FollowupModal(discord.ui.Modal):
             from_followup=FollowupData(message_link, self.children[0].value),
             response_mode=self.search_cog.redo_users[self.ctx.user.id].response_mode,
             followup_user=interaction.user,
-            model="gpt-4-32k",
+            model="gpt-4-turbo",
         )

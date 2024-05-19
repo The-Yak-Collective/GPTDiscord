@@ -1382,7 +1382,7 @@ class Index_handler:
         nodes,
         user_api_key,
         child_branch_factor,
-        model="gpt-4-32k",
+        model="gpt-4-turbo",
         multistep=False,
     ):
         if not user_api_key:

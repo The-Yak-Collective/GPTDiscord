@@ -30,17 +30,13 @@ class UsageService:
 
     MODEL_COST_MAP = {
         "gpt-4": "gpt4",
-        "gpt-4-32k": "gpt4-32",
-        "gpt-4-0613": "gpt4",
-        "gpt-4-32k-0613": "gpt4-32",
-        "gpt-3.5-turbo": "turbo",
-        "gpt-3.5-turbo-16k": "turbo-16",
-        "gpt-3.5-turbo-0613": "turbo",
-        "gpt-3.5-turbo-16k-0613": "turbo",
+        "gpt-4o": "gpt4",
+        "gpt-4-turbo": "gpt4",
+        "gpt-4-turbo-preview": "gpt4",
+        "gpt-3.5-turbo-instruct": "turbo",
         "text-davinci-003": "davinci",
         "text-curie-001": "curie",
-        "gpt-4-1106-preview": "gpt-turbo",
-        "gpt-4-1106-vision-preview": "gpt-turbo",
+        "text-embedding-3-large": "embedding"
     }
 
     ModeType = Literal["gpt4", "gpt4-32k", "turbo", "turbo-16k", "davinci", "embedding"]

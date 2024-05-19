@@ -939,7 +939,7 @@ class TextService:
 
                     response_json = await converser_cog.model.send_chatgpt_chat_request(
                         last_messages,
-                        "gpt-4-vision-preview",
+                        "gpt-4-turbo-preview",
                         temp_override=0,
                         user_displayname=message.author.display_name,
                         bot_name=BOT_NAME,

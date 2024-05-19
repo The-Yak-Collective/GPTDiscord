@@ -751,7 +751,7 @@ class Commands(discord.Cog, name="Commands"):
         name="model",
         description="The model to use for the conversation",
         required=False,
-        default="gpt-4-1106-preview",
+        default="gpt-4-turbo",
         autocomplete=Settings_autocompleter.get_function_calling_models,
     )
     @discord.option(
@@ -938,7 +938,7 @@ class Commands(discord.Cog, name="Commands"):
         name="model",
         description="The model to use for the request (querying, not composition)",
         required=False,
-        default="gpt-4-32k",
+        default="gpt-4-turbo",
         autocomplete=Settings_autocompleter.get_index_and_search_models,
     )
     @discord.option(
@@ -1127,7 +1127,7 @@ class Commands(discord.Cog, name="Commands"):
         name="model",
         description="The model to use for the request (querying, not composition)",
         required=False,
-        default="gpt-4-1106-preview",
+        default="gpt-4-turbo",
         autocomplete=Settings_autocompleter.get_function_calling_models,
     )
     @discord.option(
@@ -1276,7 +1276,7 @@ class Commands(discord.Cog, name="Commands"):
         name="model",
         description="The model to use for the request (querying, not composition)",
         required=False,
-        default="gpt-4-1106-preview",
+        default="gpt-4-turbo",
         autocomplete=Settings_autocompleter.get_function_calling_models,
     )
     @discord.option(
@@ -1358,7 +1358,7 @@ class Commands(discord.Cog, name="Commands"):
         name="model",
         description="The model to use for the request (querying, not composition)",
         required=False,
-        default="gpt-4-1106-preview",
+        default="gpt-4-turbo",
         autocomplete=Settings_autocompleter.get_index_and_search_models,
     )
     @discord.option(
@@ -1377,7 +1377,7 @@ class Commands(discord.Cog, name="Commands"):
         nodes: int = 4,
         deep: bool = False,
         response_mode: str = "refine",
-        model: str = "gpt-4-1106-preview",
+        model: str = "gpt-4-turbo",
         multistep: bool = False,
     ):
         await self.search_cog.search_command(

@@ -25,7 +25,7 @@ async def test_send_req_gpt():
     model = Model(usage_service)
     prompt = "how many hours are in a day?"
     res = await model.send_request(
-        prompt, None, is_chatgpt_request=True, model="gpt-3.5-turbo"
+        prompt, None, is_chatgpt_request=True, model="gpt-4-turbo"
     )
     assert "24" in res["choices"][0]["message"]["content"]
 
@@ -36,7 +36,7 @@ async def test_send_req_gpt4():
     usage_service = UsageService(Path("../tests"))
     model = Model(usage_service)
     prompt = "how many hours are in a day?"
-    res = await model.send_request(prompt, None, is_chatgpt_request=True, model="gpt-4")
+    res = await model.send_request(prompt, None, is_chatgpt_request=True, model="gpt-4-turbo")
     assert "24" in res["choices"][0]["message"]["content"]
 
 

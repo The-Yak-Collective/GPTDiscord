@@ -54,25 +54,25 @@ class Models:
     CURIE = "gpt-3.5-turbo-instruct"
 
     # Embedding models
-    EMBEDDINGS = "text-embedding-ada-002"
+    EMBEDDINGS = "text-embedding-3-large"
 
     # Edit models
-    EDIT = "gpt-4"
+    EDIT = "gpt-4o"
 
     # ChatGPT Models
-    TURBO = "gpt-3.5-turbo"
-    TURBO_16 = "gpt-3.5-turbo-16k"
-    TURBO_DEV = "gpt-3.5-turbo-0613"
-    TURBO_16_DEV = "gpt-3.5-turbo-16k-0613"
+    TURBO = "gpt-4-turbo"
+    TURBO_16 = "gpt-4-turbo"
+    TURBO_DEV = "gpt-4-turbo-preview"
+    TURBO_16_DEV = "gpt-4-turbo-preview"
 
     # GPT4 Models
-    GPT4 = "gpt-4"
-    GPT4_32 = "gpt-4-32k"
-    GPT4_DEV = "gpt-4-0613"
-    GPT4_32_DEV = "gpt-4-32k-0613"
-    GPT_4_TURBO = "gpt-4-1106-preview"
-    GPT_4_TURBO_VISION = "gpt-4-vision-preview"
-    GPT_4_TURBO_CATCHALL = "gpt-4-turbo-preview"
+    GPT4 = "gpt-4-turbo"
+    GPT4_32 = "gpt-4-turbo"
+    GPT4_DEV = "gpt-4-turbo-preview"
+    GPT4_32_DEV = "gpt-4-turbo-preview"
+    GPT_4_TURBO = "gpt-4-turbo"
+    GPT_4_TURBO_VISION = "gpt-4-turbo"
+    GPT_4_TURBO_CATCHALL = "gpt-4-turbo"
 
     # Model collections
     TEXT_MODELS = [
@@ -116,16 +116,17 @@ class Models:
 
     # Tokens Mapping
     TOKEN_MAPPING = {
-        DAVINCI: 4024,
-        CURIE: 2024,
-        TURBO: 4096,
-        TURBO_16: 16384,
-        TURBO_DEV: 4096,
-        TURBO_16_DEV: 16384,
-        GPT4: 8192,
-        GPT4_32: 32768,
-        GPT4_DEV: 8192,
-        GPT4_32_DEV: 32768,
+        DAVINCI: 4096,
+        CURIE: 4096,
+        EMBEDDINGS: 3072,
+        TURBO: 128000,
+        TURBO_16: 128000,
+        TURBO_DEV: 128000,
+        TURBO_16_DEV: 128000,
+        GPT4: 128000,
+        GPT4_32: 128000,
+        GPT4_DEV: 128000,
+        GPT4_32_DEV: 128000,
         GPT_4_TURBO_VISION: 128000,
         GPT_4_TURBO: 128000,
         GPT_4_TURBO_CATCHALL: 128000,
@@ -137,9 +138,9 @@ class Models:
 
 
 class ImageSize:
-    SMALL = "256x256"
-    MEDIUM = "512x512"
-    LARGE = "1024x1024"
+    SMALL = "1024x1792"
+    MEDIUM = "1024x1024"
+    LARGE = "1792x1024"
 
     ALL_SIZES = [SMALL, MEDIUM, LARGE]
 
