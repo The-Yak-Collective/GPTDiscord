@@ -66,15 +66,6 @@ class Models:
     TURBO_16_DEV = "gpt-4-turbo-preview"
 
     # GPT4 Models
-<<<<<<< HEAD
-    GPT4 = "gpt-4-turbo"
-    GPT4_32 = "gpt-4-turbo"
-    GPT4_DEV = "gpt-4-turbo-preview"
-    GPT4_32_DEV = "gpt-4-turbo-preview"
-    GPT_4_TURBO = "gpt-4-turbo"
-    GPT_4_TURBO_VISION = "gpt-4-turbo"
-    GPT_4_TURBO_CATCHALL = "gpt-4-turbo"
-=======
     GPT4 = "gpt-4"
     GPT4_32 = "gpt-4-32k"
     GPT4_DEV = "gpt-4-0613"
@@ -84,7 +75,6 @@ class Models:
     GPT_4_TURBO_CATCHALL = "gpt-4-turbo-preview"
     GPT_4_TURBO_REGULAR = "gpt-4-turbo"
     GPT_4_OMEGA = "gpt-4o"
->>>>>>> 0e16004b6bc74812e186137c331f7b9e63882750
 
     # Model collections
     TEXT_MODELS = [
